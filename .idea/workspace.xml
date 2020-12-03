@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ffa0453-ff57-4c0e-a2ac-183419c9be22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bin/publish_post.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bin/delete_post.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/show_posts.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/show_posts.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +131,7 @@
       <workItem from="1607018414156" duration="51000" />
       <workItem from="1607018528637" duration="322000" />
       <workItem from="1607018975630" duration="123000" />
-      <workItem from="1607020249554" duration="5610000" />
+      <workItem from="1607020249554" duration="6002000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1607000393976</created>
@@ -177,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607028565678</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add publish_post scripts">
+      <created>1607029536124</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607029536125</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +206,8 @@
     <MESSAGE value="setup" />
     <MESSAGE value="add write_post script" />
     <MESSAGE value="add write_post and read_post scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add write_post and read_post scripts" />
+    <MESSAGE value="add publish_post scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="add publish_post scripts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

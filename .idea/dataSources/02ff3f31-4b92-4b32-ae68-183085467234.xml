@@ -789,9 +789,9 @@ false Zulu
     <database id="2" parent="1" name="diesel_demo">
       <ObjectId>16385</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>492</IntrospectionStateNumber>
+      <IntrospectionStateNumber>500</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|16394|16396|1
+      <Relations>sequence|table|16406|16408|1
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -874,7 +874,7 @@ UC/10
 </Acl>
       <StateNumber>286</StateNumber>
       <Owner>wm</Owner>
-      <IntrospectionStateNumber>493</IntrospectionStateNumber>
+      <IntrospectionStateNumber>501</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="19" parent="2" name="plpgsql">
@@ -975,9 +975,9 @@ UC/10
       <Type>index</Type>
     </access-method>
     <sequence id="31" parent="18" name="posts_id_seq">
-      <ObjectId>16394</ObjectId>
+      <ObjectId>16406</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>491</StateNumber>
+      <StateNumber>496</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
     <table id="32" parent="18" name="__diesel_schema_migrations">
@@ -986,10 +986,9 @@ UC/10
       <StateNumber>487</StateNumber>
     </table>
     <table id="33" parent="18" name="posts">
-      <ObjectId>16396</ObjectId>
-      <Outdated>1</Outdated>
+      <ObjectId>16408</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>491</StateNumber>
+      <StateNumber>496</StateNumber>
     </table>
     <routine id="34" parent="18" name="diesel_manage_updated_at">
       <ObjectId>16392</ObjectId>
@@ -1049,7 +1048,7 @@ UC/10
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>491</StateNumber>
+      <StateNumber>496</StateNumber>
       <DefaultExpression>nextval(&apos;posts_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
@@ -1057,27 +1056,27 @@ UC/10
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>491</StateNumber>
+      <StateNumber>496</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="42" parent="33" name="body">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>491</StateNumber>
+      <StateNumber>496</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="43" parent="33" name="published">
       <Position>4</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>491</StateNumber>
+      <StateNumber>496</StateNumber>
       <DefaultExpression>false</DefaultExpression>
       <TypeId>16</TypeId>
     </column>
     <index id="44" parent="33" name="posts_pkey">
-      <ObjectId>16404</ObjectId>
-      <StateNumber>491</StateNumber>
+      <ObjectId>16416</ObjectId>
+      <StateNumber>496</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1086,8 +1085,8 @@ UC/10
       <ClassIds>1978</ClassIds>
     </index>
     <key id="45" parent="33" name="posts_pkey">
-      <ObjectId>16405</ObjectId>
-      <StateNumber>491</StateNumber>
+      <ObjectId>16417</ObjectId>
+      <StateNumber>496</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>posts_pkey</UnderlyingIndexName>
