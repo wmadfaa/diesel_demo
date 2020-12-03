@@ -789,8 +789,10 @@ false Zulu
     <database id="2" parent="1" name="diesel_demo">
       <ObjectId>16385</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>489</IntrospectionStateNumber>
+      <IntrospectionStateNumber>492</IntrospectionStateNumber>
       <Current>1</Current>
+      <Relations>sequence|table|16394|16396|1
+</Relations>
     </database>
     <database id="3" parent="1" name="postgres">
       <ObjectId>13709</ObjectId>
@@ -872,7 +874,7 @@ UC/10
 </Acl>
       <StateNumber>286</StateNumber>
       <Owner>wm</Owner>
-      <IntrospectionStateNumber>490</IntrospectionStateNumber>
+      <IntrospectionStateNumber>493</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="19" parent="2" name="plpgsql">
@@ -972,12 +974,24 @@ UC/10
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <table id="31" parent="18" name="__diesel_schema_migrations">
+    <sequence id="31" parent="18" name="posts_id_seq">
+      <ObjectId>16394</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>491</StateNumber>
+      <DataType>integer|0s</DataType>
+    </sequence>
+    <table id="32" parent="18" name="__diesel_schema_migrations">
       <ObjectId>16386</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>487</StateNumber>
     </table>
-    <routine id="32" parent="18" name="diesel_manage_updated_at">
+    <table id="33" parent="18" name="posts">
+      <ObjectId>16396</ObjectId>
+      <Outdated>1</Outdated>
+      <Owner>postgres</Owner>
+      <StateNumber>491</StateNumber>
+    </table>
+    <routine id="34" parent="18" name="diesel_manage_updated_at">
       <ObjectId>16392</ObjectId>
       <Owner>postgres</Owner>
       <SourceTextLength>166</SourceTextLength>
@@ -988,7 +1002,7 @@ UC/10
       <RoutineKind>function</RoutineKind>
       <Rows>0.0</Rows>
     </routine>
-    <routine id="33" parent="18" name="diesel_set_updated_at">
+    <routine id="35" parent="18" name="diesel_set_updated_at">
       <ObjectId>16393</ObjectId>
       <Owner>postgres</Owner>
       <SourceTextLength>201</SourceTextLength>
@@ -998,14 +1012,14 @@ UC/10
       <RoutineKind>function</RoutineKind>
       <Rows>0.0</Rows>
     </routine>
-    <column id="34" parent="31" name="version">
+    <column id="36" parent="32" name="version">
       <Position>1</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>487</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="35" parent="31" name="run_on">
+    <column id="37" parent="32" name="run_on">
       <Position>2</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
@@ -1013,7 +1027,7 @@ UC/10
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <TypeId>1114</TypeId>
     </column>
-    <index id="36" parent="31" name="__diesel_schema_migrations_pkey">
+    <index id="38" parent="32" name="__diesel_schema_migrations_pkey">
       <ObjectId>16390</ObjectId>
       <StateNumber>487</StateNumber>
       <ColNames>version</ColNames>
@@ -1024,22 +1038,69 @@ UC/10
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <key id="37" parent="31" name="__diesel_schema_migrations_pkey">
+    <key id="39" parent="32" name="__diesel_schema_migrations_pkey">
       <ObjectId>16391</ObjectId>
       <StateNumber>487</StateNumber>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>__diesel_schema_migrations_pkey</UnderlyingIndexName>
     </key>
-    <argument id="38" parent="32" name="_tbl">
+    <column id="40" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>491</StateNumber>
+      <DefaultExpression>nextval(&apos;posts_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="41" parent="33" name="title">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>491</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="42" parent="33" name="body">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>491</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="43" parent="33" name="published">
+      <Position>4</Position>
+      <DataType>boolean|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>491</StateNumber>
+      <DefaultExpression>false</DefaultExpression>
+      <TypeId>16</TypeId>
+    </column>
+    <index id="44" parent="33" name="posts_pkey">
+      <ObjectId>16404</ObjectId>
+      <StateNumber>491</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <key id="45" parent="33" name="posts_pkey">
+      <ObjectId>16405</ObjectId>
+      <StateNumber>491</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>posts_pkey</UnderlyingIndexName>
+    </key>
+    <argument id="46" parent="34" name="_tbl">
       <Position>1</Position>
       <DataType>regclass|0s</DataType>
     </argument>
-    <argument id="39" parent="32">
+    <argument id="47" parent="34">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="40" parent="33">
+    <argument id="48" parent="35">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>trigger|0s</DataType>
     </argument>
