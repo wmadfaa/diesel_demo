@@ -4,10 +4,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ffa0453-ff57-4c0e-a2ac-183419c9be22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bin/delete_post.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9ffa0453-ff57-4c0e-a2ac-183419c9be22" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +128,7 @@
       <workItem from="1607018414156" duration="51000" />
       <workItem from="1607018528637" duration="322000" />
       <workItem from="1607018975630" duration="123000" />
-      <workItem from="1607020249554" duration="6002000" />
+      <workItem from="1607020249554" duration="6314000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1607000393976</created>
@@ -182,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607029536125</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add delete_post scripts">
+      <created>1607031016802</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607031016802</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +211,8 @@
     <MESSAGE value="add write_post script" />
     <MESSAGE value="add write_post and read_post scripts" />
     <MESSAGE value="add publish_post scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add publish_post scripts" />
+    <MESSAGE value="add delete_post scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delete_post scripts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
